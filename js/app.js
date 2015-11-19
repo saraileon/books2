@@ -1,15 +1,31 @@
-/*--global console:true*/
+/*--global alert:true*/
 
-$(document).ready( function () {
+var loader = function(){
+ var h = $(window).height();
+ var w = $(window).width();
+ $('#loader').height(h+'px').width(w+'px');
+};
 
-	$('.ebook-list > .col-sm-2 > img').each( function () {
+var alignBooks = function () {
+	$('.ebook-list > .col-sm-2 > a > img').each( function () {
 		var p =		$(this).parents('.ebook-list');
 		var rh =	$(p).height();
 		var h = 	( rh - $(this).height() ) ;
-		// var n =		$(this).attr('src');
 
 		$(this).css({'margin-top' : h+'px'});
-		
-		// console.log(' -- '+ h +' -- ' + rh);
 	});
+};
+
+// loader();
+
+$(document).ready(function() {
+	loader();
+});
+
+$(window).load( function () {
+	$('#loader').fadeOut(2800);
+
+	alignBooks();
+	$(window).resize(alignBooks);
+	
 });
