@@ -1,0 +1,19 @@
+body, html { width: 100%; height: 100%; background-color: #2B2D2E; }
+
+body { padding-top: 54px; padding-bottom: 80px; }
+
+/* Global Styles
+--------------------------------*/
+.pull-bottom { display: inline-block; vertical-align: bottom; }
+
+.fix { clear: both; float: none; }
+
+/* Ebooks List Styles
+--------------------------------*/
+#ebooks-container { display: block; }
+
+.ebook-list { position: relative; padding: 15px 0 0; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b2d2e+0,111111+92 */ background: #2b2d2e; /* Old browsers */ background: -moz-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: -webkit-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: linear-gradient(to bottom, #2b2d2e 0%, #111111 92%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2e', endColorstr='#111111',GradientType=0 ); }
+
+.cover-style { position: absolute; top: 0; left: 0; width: 120%; overflow-x: hidden; height: 100%; z-index: 1000; webkit-box-shadow: inset 0px -3px 8px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: inset 0px -3px 8px 0px rgba(0, 0, 0, 0.75); box-shadow: inset 0px -3px 8px 0px rgba(0, 0, 0, 0.75); }
+
+.ebook-list img { display: block; width: 100%; height: auto; }

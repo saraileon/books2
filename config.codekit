@@ -551,6 +551,83 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/img\/covers\/anna_kiss.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126143,
+		"inputAbbreviatedPath": "\/img\/covers\/anna_kiss.png",
+		"outputAbbreviatedPath": "\/img\/covers\/anna_kiss.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/casino_royale.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 661894,
+		"inputAbbreviatedPath": "\/img\/covers\/casino_royale.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/casino_royale.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/city_of_ashes.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 484298,
+		"inputAbbreviatedPath": "\/img\/covers\/city_of_ashes.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/city_of_ashes.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/city_of_bones.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 337150,
+		"inputAbbreviatedPath": "\/img\/covers\/city_of_bones.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/city_of_bones.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/city_of_fallen_angels.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 672071,
+		"inputAbbreviatedPath": "\/img\/covers\/city_of_fallen_angels.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/city_of_fallen_angels.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/city_of_glass.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 413851,
+		"inputAbbreviatedPath": "\/img\/covers\/city_of_glass.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/city_of_glass.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/city_of_lost_souls.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 373290,
+		"inputAbbreviatedPath": "\/img\/covers\/city_of_lost_souls.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/city_of_lost_souls.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/covers\/divergent.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -569,6 +646,39 @@
 		"initialSize": 738572,
 		"inputAbbreviatedPath": "\/img\/covers\/eleanor_park.jpg",
 		"outputAbbreviatedPath": "\/img\/covers\/eleanor_park.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/fellowship_ring.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 997853,
+		"inputAbbreviatedPath": "\/img\/covers\/fellowship_ring.png",
+		"outputAbbreviatedPath": "\/img\/covers\/fellowship_ring.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/heart_of_darkness.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.06467e+06,
+		"inputAbbreviatedPath": "\/img\/covers\/heart_of_darkness.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/heart_of_darkness.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/jungle_book.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 258959,
+		"inputAbbreviatedPath": "\/img\/covers\/jungle_book.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/jungle_book.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -606,6 +716,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/covers\/return_king.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.02131e+06,
+		"inputAbbreviatedPath": "\/img\/covers\/return_king.png",
+		"outputAbbreviatedPath": "\/img\/covers\/return_king.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/sherlock.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 817851,
+		"inputAbbreviatedPath": "\/img\/covers\/sherlock.jpg",
+		"outputAbbreviatedPath": "\/img\/covers\/sherlock.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/covers\/the_spies.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -613,6 +745,39 @@
 		"initialSize": 90884,
 		"inputAbbreviatedPath": "\/img\/covers\/the_spies.jpg",
 		"outputAbbreviatedPath": "\/img\/covers\/the_spies.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/covers\/two_towers.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.18144e+06,
+		"inputAbbreviatedPath": "\/img\/covers\/two_towers.png",
+		"outputAbbreviatedPath": "\/img\/covers\/two_towers.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/dar_wood.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84377,
+		"inputAbbreviatedPath": "\/img\/dar_wood.jpg",
+		"outputAbbreviatedPath": "\/img\/dar_wood.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/dar_wood2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26390,
+		"inputAbbreviatedPath": "\/img\/dar_wood2.jpg",
+		"outputAbbreviatedPath": "\/img\/dar_wood2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -626,12 +791,45 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/js\/app.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/app.js",
+		"outputAbbreviatedPath": "\/js\/min\/app-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/min\/bootstrap.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/bootstrap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/jquery-1.11.3.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/jquery-1.11.3.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery-1.11.3.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
