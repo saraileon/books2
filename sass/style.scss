@@ -58,7 +58,7 @@ body{
 	}
 
 	.loader-center{
-		margin: 25% auto 0;
+		margin: 22% auto 0;
 		display: block;
 		width:300px;
 	}
@@ -164,9 +164,9 @@ body{
 		overflow-x: hidden;
 		height: 100%;
 		z-index: 1000;
-		webkit-box-shadow: inset 0px -3px 8px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: inset 0px -3px 8px 0px rgba(0,0,0,0.75);
-		box-shadow: inset 0px -3px 8px 0px rgba(0,0,0,0.75);
+		webkit-box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
+		box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
 		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
 		pointer-events: none;
 	}
