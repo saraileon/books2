@@ -1,4 +1,5 @@
 /*--global console:true*/
+/*jshint unused: false, undef:false */
 
 var loader = function(){
  var h = $(window).height();
@@ -26,17 +27,31 @@ var getTitles = function () {
 		$(s).children('p').html(t);
 	});
 };
-// loader();
 
 $(document).ready(function() {
 	loader();
 });
 
-$(window).load( function () {
+
+$('#ebooks-container').imagesLoaded( { background: true }, function() {
+  // console.log('#container background image loaded');
+}).always( function( instance ) {
+
 	$('#loader').fadeOut(2800);
 
 	alignBooks();
 	getTitles();
 	$(window).resize(alignBooks);
-	
+
 });
+
+
+
+// $(window).load( function () {
+	// $('#loader').fadeOut(2800);
+
+	// alignBooks();
+	// getTitles();
+	// $(window).resize(alignBooks);
+	
+// });

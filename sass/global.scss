@@ -1,0 +1,64 @@
+@import "bourbon";
+@charset 'utf-8';
+
+body,html{
+	width:100%;
+	height: 100%;
+	background-color: #2B2D2E;
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+a{
+	color: #EA3390;
+}
+
+/* Global Styles
+--------------------------------*/
+
+.pull-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.fix{
+	clear: both;
+	float: none;
+}
+
+
+.btn-pink{
+	background-color: #EA3390;
+	border-color: #EA3390;
+	color: #fff;
+  transition: all 0.4s ease-in-out;
+
+  &:hover{
+		background-color: #333;
+		border-color: #333;		
+		color: #fff;
+	}
+
+}
+
+.btn-pink-outline{
+	border-color: #EA3390;
+	background-color: transparent;
+	color: #EA3390;
+  transition: color 0.4s ease-in-out;
+
+	&:hover{
+		background-color: #EA3390;
+		color: #fff;
+	}
+}
+
+
+/* Mixins
+--------------------------------*/
+@mixin animate( $property: all, $duration: 1s, $easing: ease ) {
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  transition: $property $duration $easing;
+}

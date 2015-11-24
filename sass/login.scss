@@ -1,0 +1,105 @@
+@import "bourbon";
+@charset 'utf-8';
+@import "global.css";
+
+body{
+	// background: #2B2D2E url('../img/footer_lodyas.png') repeat top left;
+	background: #2B2D2E url('../img/playa-del-carmen.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+
+/* Login Styles
+--------------------------------*/
+
+#login-area{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	#login-overlay{
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		// /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b2d2e+0,111111+92&amp;0.3+0,1+100 */
+		// background: -moz-linear-gradient(top,  rgba(43,45,46,0.2) 0%, rgba(17,17,17,0.35) 92%, rgba(17,17,17,0.5) 100%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(top,  rgba(43,45,46,0.2) 0%,rgba(17,17,17,0.35) 92%,rgba(17,17,17,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(to bottom,  rgba(43,45,46,0.2) 0%,rgba(17,17,17,0.35) 92%,rgba(17,17,17,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d2b2d2e', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+
+	}
+
+	.login-container{
+		margin-top: 8%;
+
+		img{
+			width: 217px;
+			height: auto;
+			margin: 0 auto 0px;
+
+			+p{
+				// color: #EA3390;
+				color: #fff;
+				padding: 3px 0;
+				margin: 0 0 10px;
+				display: block;
+				text-align: center;
+				font-weight: 100;
+			}
+
+		}
+
+		.card{
+			background-color: transparent;
+			// background-color: #fff;
+			border: 8px solid rgba(0,0,0,0.2);
+			border-radius: 4px;
+
+			.card-block{
+				background-color: #fff;
+				border-radius: 4px;
+
+			}
+
+		}
+
+		hr{
+			margin: 15px 0 10px;
+			padding: 0;
+		}
+
+		ul.social-login{
+			list-style-type: none;
+			margin: 5px 0 5px;
+			padding: 0;
+			display: block;
+
+			li{
+				// float: left;
+				display: inline-block;
+				padding: 0;
+				margin: 0 ;
+				// width: 24%;
+				// text-align: center;
+
+				a{
+					font-size: 32px;
+					margin: 0 5px 0 0;
+					padding: 0;
+					display: block;
+					line-height: 32px;
+  				transition: color 0.4s ease-in-out;
+		
+					&:hover{
+						color: #333;
+					}
+
+				}
+			}
+		}
+
+	}
+
+}
