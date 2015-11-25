@@ -11,11 +11,12 @@ var alignBooks = function () {
 	$('.ebook-list > .col-sm-3 > a > img').each( function () {
 		var p =		$(this).parents('.ebook-list');
 		var rh =	$(this).height();
+		var w =	$(this).width();
 
 		var h = 	( $(p).height() - rh ) ;
 		// $(this).css({'margin-top' : h+'px'});
-		$(this).parent('a').height( rh ).css('margin-top',h+'px');
-		$(this).siblings('.cover-overlay').css('bottom', '-'+ rh +'px');
+		$(this).parent('a').height( rh ).css({'margin-top':h+'px','width':w+'px'});
+		$(this).siblings('.cover-overlay').css({'bottom': '-'+ rh +'px'});
 	});
 };
 
@@ -42,7 +43,8 @@ var getBookData = function () {
 					});
 				$(triangle).addClass('bought-m');
 				$(s).remove();
-				$(that).parent('a').attr({'title':t, 'href':h}).addClass('swipebox');
+				$(that).parent('a').attr({'title':t, 'href': 'magazine.html'});
+				// .addClass('swipebox');
 			}
 
 		$(s).children('p').html(t);
@@ -81,7 +83,7 @@ $(window).load(function() {
 	$(window).resize(alignBooks, alignNav);
 
 	imgLoad.on( 'always', function( instance ) {
-		$('#loader').fadeOut("slow");
+		$('#loader').fadeOut(1900);
 	});
 });
 

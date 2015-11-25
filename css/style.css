@@ -28,13 +28,13 @@ a { color: #EA3390; }
 .navbar#btt-nav .nav li i { font-size: 30px; padding: 0; margin: 0; }
 .navbar#btt-nav .nav .nav-item + .nav-item { margin-left: 1.5em; }
 
-body { padding-top: 54px; padding-bottom: 50px; }
+body { padding-top: 54px; padding-bottom: 54px; }
 
 /* Loader Styles
 --------------------------------*/
 #loader { position: fixed; top: 0; height: 0; z-index: 2000; background: #333 url("../img/footer_lodyas.png") repeat top left; width: 100%; min-height: 200px; color: #fff; text-align: center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; }
 #loader p { font-size: 42px; }
-#loader .loader-center { margin: 35% auto 0; display: block; width: 300px; }
+#loader .loader-center { margin: 48% auto 0; display: block; width: 300px; }
 #loader .spin-load { font-size: 74px; margin: 0; padding: 0; }
 
 /* Navbar Styles
@@ -47,8 +47,7 @@ body { padding-top: 54px; padding-bottom: 50px; }
 --------------------------------*/
 #ebooks-container { display: block; overflow-y: scroll; -webkit-overflow-scrolling: touch; overflow-x: hidden; height: 100%; }
 #ebooks-container .ebook-list { position: relative; padding: 15px 0 0 0; background: #2b2d2e; /* Old browsers */ background: -moz-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: -webkit-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: linear-gradient(to bottom, #2b2d2e 0%, #111111 92%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2e', endColorstr='#111111',GradientType=0 ); }
-#ebooks-container .ebook-list .col-sm-3 { padding-left: 1rem; padding-right: 1rem; }
-#ebooks-container .ebook-list a { position: relative; display: block; margin: 0; padding: 0; overflow-y: hidden; }
+#ebooks-container .ebook-list a { position: relative; display: block; margin: 0; padding: 0; -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); overflow: hidden; }
 #ebooks-container .ebook-list a .book-titlef { width: 100%; position: absolute; bottom: -18px; left: 0; background-color: rgba(43, 45, 46, 0.1); color: #fff; font-size: 10px; line-height: 18px; max-height: 18px; }
 #ebooks-container .ebook-list a .book-titlef p { margin: 0; text-align: center; }
 #ebooks-container .ebook-list a .cover-overlay { transition: all 0.5s ease; position: absolute; width: 100%; bottom: -100px; left: 0; height: 100%; background: rgba(51, 51, 51, 0.5); left: 0; z-index: 1001; color: #fff; text-align: center; }
@@ -58,7 +57,7 @@ body { padding-top: 54px; padding-bottom: 50px; }
 #ebooks-container .ebook-list a .cover-overlay .btn { margin: 0; }
 #ebooks-container .ebook-list a:hover > .cover-overlay { display: block; left: 0; bottom: 0 !important; height: 100%; }
 #ebooks-container .ebook-list a img { display: block; width: 100%; height: auto; }
-#ebooks-container .ebook-list a img:hover, #ebooks-container .ebook-list a img:active, #ebooks-container .ebook-list a img:focus { -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.95); -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.95); box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.95); cursor: pointer; }
+#ebooks-container .ebook-list a img:hover, #ebooks-container .ebook-list a img:active, #ebooks-container .ebook-list a img:focus { cursor: pointer; }
 #ebooks-container .cover-style { position: absolute; top: 0; left: 0; width: 120%; overflow-x: hidden; height: 100%; z-index: 1000; webkit-box-shadow: inset 0px -6px 15px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: inset 0px -6px 15px 0px rgba(0, 0, 0, 0.75); box-shadow: inset 0px -6px 15px 0px rgba(0, 0, 0, 0.75); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; }
 
 .triangle-topright { display: block; position: relative; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; z-index: 1001; }

@@ -5,7 +5,7 @@ body { background: #2B2D2E url("../img/footer_lodyas.png") repeat top left; back
 --------------------------------*/
 #login-area { position: relative; width: 100%; height: 100%; }
 #login-area #login-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-#login-area .login-container { margin-top: 8%; }
+#login-area .login-container { margin-top: 22%; }
 #login-area .login-container img { width: 217px; height: auto; margin: 0 auto 0px; }
 #login-area .login-container img + p { color: #fff; padding: 3px 0; margin: 0 0 10px; display: block; text-align: center; font-weight: 100; }
 #login-area .login-container .card { background-color: transparent; border: 8px solid rgba(0, 0, 0, 0.2); border-radius: 4px; }
