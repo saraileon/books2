@@ -8,50 +8,80 @@ var loader = function(){
 };
 
 var alignBooks = function () {
-	$('.ebook-list > .col-sm-2 > a > img').each( function () {
+	$('.ebook-list > .col-sm-3 > a > img').each( function () {
 		var p =		$(this).parents('.ebook-list');
-		var rh =	$(p).height();
-		// $(this).siblings('.cover-overlay').css({'bottom' : '-'+rh+'px'});
-		var h = 	( rh - $(this).height() ) ;
+		var rh =	$(this).height();
 
-		$(this).css({'margin-top' : h+'px'});
+		var h = 	( $(p).height() - rh ) ;
+		// $(this).css({'margin-top' : h+'px'});
+		$(this).parent('a').height( rh ).css('margin-top',h+'px');
+		$(this).siblings('.cover-overlay').css('bottom', '-'+ rh +'px');
 	});
 };
 
-var getTitles = function () {
-	$('.ebook-list > .col-sm-2 > a > img').each( function () {
-		var t = $(this).attr('data-title');
-		var s = $(this).siblings('.cover-overlay');
-		var h = $(this).attr('src');
-		$(this).parent('a').attr({'title':t, 'href':h});
+var getBookData = function () {
+	$('.ebook-list > .col-sm-3 > a > img').each( function () {
+		var that = this;
+		var t = $(that).attr('data-title');
+		var s = $(that).siblings('.cover-overlay');
+		var p = $(that).attr('data-price');
+		var h = $(that).attr('src');
+		var status = $(that).attr('data-status');
+		var triangle = $(that).siblings('.triangle-topright');
+		var ps = $(triangle).children('p');
+
+			if( status === '0' ){
+				$(ps).html(p);
+			}else{
+				$(ps).html('<i class="fa fa-check-circle"></i>')
+					.css({
+						'font-size':'24px',
+						'top':'-2px',
+						'right':'-12px',
+						'transform':'none'
+					});
+				$(triangle).addClass('bought-m');
+				$(s).remove();
+				$(that).parent('a').attr({'title':t, 'href':h}).addClass('swipebox');
+			}
+
 		$(s).children('p').html(t);
+
+		$(s).children('button').click(function (){
+			alert('Fecha: ' +t);
+		});
+		
+
 	});
 };
+
+var alignNav = function () {
+	var w = $('#bt-nav-ul').width() + 1;
+	var t = $('#btt-nav').width();
+	var r = (t-w)/2;
+	// console.log(r);
+
+	$('#bt-nav-ul').css({'width':w+'px','margin':'0 '+r+'px -3px'});
+};
+
 
 $(document).ready(function() {
 	loader();
 });
 
 
-$('#ebooks-container').imagesLoaded( { background: true }, function() {
-  // console.log('#container background image loaded');
-}).always( function( instance ) {
+$(window).load(function() {
 
-	$('#loader').fadeOut(2800);
+	var elem =  document.getElementById("ebooks-container");
+	var imgLoad = imagesLoaded( elem );
 
 	alignBooks();
-	getTitles();
-	$(window).resize(alignBooks);
+	alignNav();
+	getBookData();
+	$(window).resize(alignBooks, alignNav);
 
+	imgLoad.on( 'always', function( instance ) {
+		$('#loader').fadeOut("slow");
+	});
 });
 
-
-
-// $(window).load( function () {
-	// $('#loader').fadeOut(2800);
-
-	// alignBooks();
-	// getTitles();
-	// $(window).resize(alignBooks);
-	
-// });

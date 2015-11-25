@@ -1,19 +1,10 @@
 @import "bourbon";
 @charset 'utf-8';
-@import "global.css";
+@import "global";
 
 body{
 	padding-top:54px;
-	// padding-bottom: 80px;
-}
-
-/* Mixins
---------------------------------*/
-@mixin animate( $property: all, $duration: 1s, $easing: ease ) {
-  -webkit-transition: $property $duration $easing;
-  -moz-transition: $property $duration $easing;
-  -o-transition: $property $duration $easing;
-  transition: $property $duration $easing;
+	padding-bottom: 50px;
 }
 
 /* Loader Styles
@@ -28,15 +19,14 @@ body{
 	min-height: 200px;
 	color: #fff;
 	text-align: center;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
-	pointer-events: none;
+	@include pointerNone();
 
 	p{
 		font-size: 42px;
 	}
 
 	.loader-center{
-		margin: 24% auto 0;
+		margin: 35% auto 0;
 		display: block;
 		width:300px;
 	}
@@ -69,50 +59,70 @@ body{
 #ebooks-container{
 	display: block;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	overflow-x: hidden;
 	height: 100%;
-  -webkit-overflow-scrolling: touch;
+  	
 
 	.ebook-list{
 		position: relative;
-		padding: 15px 0 0;
+		padding: 15px 0 0 0;
 		background: rgb(43,45,46); /* Old browsers */
 		background: -moz-linear-gradient(top,  rgba(43,45,46,1) 0%, rgba(17,17,17,1) 92%); 
 		background: -webkit-linear-gradient(top,  rgba(43,45,46,1) 0%,rgba(17,17,17,1) 92%);
 		background: linear-gradient(to bottom,  rgba(43,45,46,1) 0%,rgba(17,17,17,1) 92%); 
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2e', endColorstr='#111111',GradientType=0 );
 
+		.col-sm-3{
+			padding-left: 1rem;
+    	padding-right: 1rem;
+		}
+
 		a{
 			position: relative;
 			display: block;
 			margin: 0;
 			padding: 0;
+			overflow-y: hidden;
+
+
+			.book-titlef{
+				width: 100%;
+				position: absolute;
+				bottom: -18px;
+				left: 0;
+				background-color: rgba(43,45,46,0.1);
+				color: #fff;
+				font-size: 10px;
+				line-height: 18px;
+				max-height: 18px;
+				// z-index: 999;
+
+				p{
+					// padding: 0px 0 6px 0;
+					margin: 0;
+					text-align: center;
+				}
+
+			}
+			
 			
 
 			.cover-overlay{
-				// @include animate(all, 5s, ease-in);
-				// -webkit-transition: height 0.5s easeOutBounce 0s;
-			  // -moz-transition: height 0.5s easeOutBounce 0s;
-			  // -o-transition: height 0.5s easeOutBounce 0s;
-			  // transition: height 0.5s easeOutBounce 0s;
-				display: none;
+				transition: all 0.5s ease;
 				position: absolute;
 				width: 100%;
-				bottom: 0;
-		    // height: 0;
+				bottom: -100px;
 		    left: 0;
-		    right: 0;
 		    height: 100%;
 				background: rgba(51,51,51,0.5);
-				bottom: 0;
 				left: 0;
-				z-index: 1000;
-				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
-				pointer-events: none;
+				z-index: 1001;
+				// @include pointerNone();
 				color: #fff;
 				text-align: center;
+				// display: none;
 				
-
 				span{
 					width: 100%;
 					margin-top: 50%;
@@ -122,13 +132,32 @@ body{
 						font-size: 48px;
 					}
 
-
 				}
 
 				p{
+					margin: 45% 0 5px 0;
 					font-size: 14px;
 				}
 
+				.btn{
+					margin: 0;
+				}
+
+			}
+
+			&:hover{
+
+				> .triangle-topright{
+					// display: none;
+				}
+
+				> .cover-overlay{
+						display: block;
+						// top:0;
+						left: 0;
+						bottom: 0 !important;
+						height: 100%;
+					}
 			}
 
 			img{
@@ -143,27 +172,22 @@ body{
 					cursor:pointer;
 				}
 
-				&:hover + .cover-overlay{
-					display: block;
-					top:0;
-					left: 0;
-					height: 100%;
+				&:hover{
 
-				}
+					// + 
+
+					// + .triangle-topright{
+					// 	display: none !important;
+					// }
+
+				} 
+
+			}
 
 		}
-
-		
-		
-
-		}
-
-		
-
 		
 
 	}
-
 
 	.cover-style{
 		position: absolute;
@@ -176,12 +200,56 @@ body{
 		webkit-box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
 		box-shadow: inset 0px -6px 15px 0px rgba(0,0,0,0.75);
-		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
-		pointer-events: none;
+		@include pointerNone();
 	}
 
 
 }
+
+
+.triangle-topright {
+	display: block;
+  position: relative;
+	@include pointerNone();
+	z-index: 1001;
+
+	a{
+		color: #fff;
+	}
+
+	&::before {
+    content:'';
+    border-top: 55px solid $primary-pink;
+    border-left: 55px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.75);
+		// -moz-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.75);
+		// box-shadow: 0px -6px 3px 0px rgba(0,0,0,0.75);
+	}
+
+	&.bought-m{
+
+		&::before {
+    	border-top: 55px solid $medium-grey;
+		}
+
+	}
+
+	.triangle-text {
+		transform: rotate(45deg);
+		// Put onto GPU as text is rendered better this way. transform: rotate(45deg) translateZ(0px);
+		position: absolute;
+		top: 8px;
+		right: 1px;
+		width: 40px;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+
 
 
 

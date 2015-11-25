@@ -1,3 +1,5 @@
+/* Colors
+--------------------------------*/
 body, html { width: 100%; height: 100%; background-color: #2B2D2E; overflow-x: hidden; font-family: 'Raleway', sans-serif; }
 
 a { color: #EA3390; }
@@ -16,3 +18,11 @@ a { color: #EA3390; }
 
 /* Mixins
 --------------------------------*/
+/* Bottom Nav
+--------------------------------*/
+.navbar#btt-nav { padding: 0rem 1rem; }
+.navbar#btt-nav .nav { margin: 0 auto; display: inline-block; width: auto; }
+.navbar#btt-nav .nav li { padding: 0 5px; }
+.navbar#btt-nav .nav li a.nav-link { padding-bottom: 0; padding-top: 0.22rem; }
+.navbar#btt-nav .nav li p { margin: 0; font-size: 11px; }
+.navbar#btt-nav .nav li i { font-size: 30px; padding: 0; margin: 0; }

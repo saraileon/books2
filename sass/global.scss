@@ -1,6 +1,28 @@
 @import "bourbon";
 @charset 'utf-8';
 
+
+/* Colors
+--------------------------------*/
+$primary-pink: #EA3390;
+$medium-grey: #4F5254;
+
+
+/* Mixins
+--------------------------------*/
+
+@mixin animate( $property: all, $duration: 1s, $easing: ease ) {
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  transition: $property $duration $easing;
+}
+
+@mixin pointerNone(){
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
+	pointer-events: none;
+}
+
 body,html{
 	width:100%;
 	height: 100%;
@@ -9,12 +31,13 @@ body,html{
 	font-family: 'Raleway', sans-serif;
 }
 
-a{
-	color: #EA3390;
-}
 
 /* Global Styles
 --------------------------------*/
+
+a{
+	color: $primary-pink;
+}
 
 .pull-bottom {
     display: inline-block;
@@ -28,8 +51,8 @@ a{
 
 
 .btn-pink{
-	background-color: #EA3390;
-	border-color: #EA3390;
+	background-color: $primary-pink;
+	border-color: $primary-pink;
 	color: #fff;
   transition: all 0.4s ease-in-out;
 
@@ -42,23 +65,72 @@ a{
 }
 
 .btn-pink-outline{
-	border-color: #EA3390;
+	border-color: $primary-pink;
 	background-color: transparent;
-	color: #EA3390;
+	color: $primary-pink;
   transition: color 0.4s ease-in-out;
 
 	&:hover{
-		background-color: #EA3390;
+		background-color: $primary-pink;
 		color: #fff;
 	}
 }
 
 
-/* Mixins
+/* Bottom Nav
 --------------------------------*/
-@mixin animate( $property: all, $duration: 1s, $easing: ease ) {
-  -webkit-transition: $property $duration $easing;
-  -moz-transition: $property $duration $easing;
-  -o-transition: $property $duration $easing;
-  transition: $property $duration $easing;
+
+.navbar#btt-nav{
+	padding: 0rem 1rem;
+
+	.nav{
+		margin: 0 auto;
+		display: inline-block;
+		width: auto;
+
+		li{
+			padding: 0 5px;
+
+			a.nav-link{
+				padding-bottom: 0;
+	    	padding-top: 0.22rem;
+			}
+
+			p{
+				margin: 0;
+				font-size: 11px;
+			}
+
+			i{
+				font-size: 30px;
+				padding: 0;
+				margin: 0;
+			}
+
+		}
+
+		.nav-item + .nav-item{
+	    margin-left: 1.5em;
+		}
+
+		
+	}
+
+	.navbar-nav {
+    // display:inline-block;
+    // float:none;
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
