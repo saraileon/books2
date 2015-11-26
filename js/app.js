@@ -1,11 +1,23 @@
 /*--global console:true*/
 /*jshint unused: false, undef:false */
 
+var pressed = function (e) {
+  // Has the enter key been pressed?
+  if ( (window.event ? event.keyCode : e.which) == 13) { 
+    // If it has been so, manually submit the <form>
+    // document.forms[0].submit();
+    $('#search-box').fadeOut(1000);
+    document.getElementById("searchBForm").reset();
+    e.preventDefault();
+  }
+};
+
 var loader = function(){
  var h = $(window).height();
  var w = $(window).width();
  $('#loader').height(h+'px').width(w+'px');
 };
+
 
 var alignBooks = function () {
 	$('.ebook-list > .col-sm-3 > a > img').each( function () {
@@ -19,6 +31,7 @@ var alignBooks = function () {
 		$(this).siblings('.cover-overlay').css({'bottom': '-'+ rh +'px'});
 	});
 };
+
 
 var getBookData = function () {
 	$('.ebook-list > .col-sm-3 > a > img').each( function () {
@@ -57,6 +70,7 @@ var getBookData = function () {
 	});
 };
 
+
 var alignNav = function () {
 	var w = $('#bt-nav-ul').width() + 1;
 	var t = $('#btt-nav').width();
@@ -65,6 +79,24 @@ var alignNav = function () {
 
 	$('#bt-nav-ul').css({'width':w+'px','margin':'0 '+r+'px -3px'});
 };
+
+
+
+var searchBar = function () {
+	$('#searchButton').click(function (){
+		$('#search-box').fadeIn(1000);
+
+		var h = $(window).height();
+		$('#search-box').height(h);
+		$('#searchbar').focus();
+		$('.search-field').css('margin-top', (h/2)-51 + 'px' );
+
+		return false;
+	});
+	
+};
+
+
 
 
 $(document).ready(function() {
@@ -80,7 +112,8 @@ $(window).load(function() {
 	alignBooks();
 	alignNav();
 	getBookData();
-	$(window).resize(alignBooks, alignNav);
+	searchBar();
+	$(window).resize(alignBooks, alignNav, searchBar);
 
 	imgLoad.on( 'always', function( instance ) {
 		$('#loader').fadeOut(1900);

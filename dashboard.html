@@ -64,111 +64,74 @@
       <a href="#" class="btn btn-pink-outline" type="submit" id="searchButton"><i class="fa fa-search"></i></a>
     </li>
   </ul>
-</nav><nav class="navbar navbar-fixed-bottom navbar-light bg-faded" id="btt-nav">
-
-  <ul class="nav navbar-nav text-center" id="bt-nav-ul">
-    <li class="nav-item active">
-      <a class="nav-link" href="store.html">
-      	<i class="fa fa-shopping-cart"></i>
-      	<p>Tienda <span class="sr-only">(current)</span></p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="library.html">
-      	<i class="fa fa-book"></i>
-      	<p>Biblioteca</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="account.html">
-      	<i class="fa fa-cogs"></i>
-      	<p>Cuenta</p>
-      </a>
-    </li>
-  </ul>
 </nav><div id="loader">
 	<div class="loader-center">
 		<span class="spin-load"><i class="fa fa-circle-o-notch fa-spin"></i></span>
 		<p>Cargando...</p>
+	</div>
+</div><div id="search-box">
+	<div class="search-field row">
+		<div class="col-md-12">
+			<form action="" class="col-md-12 search-form" id="searchBForm">
+				<fieldset class="form-group">
+			    <input type="text" class="form-control form-control-lg" id="searchbar" placeholder="Busqueda de Ediciones" onkeydown="pressed(event)">
+			  </fieldset>
+			</form>
+		</div>
 	</div>
 </div>
 <div class="container-fluid" id="ebooks-container">
 
   <div class="row  ebook-list">
     <div class="cover-style"></div>
-    <div class="col-sm-3">
-      <a href="#" class="swipebox">     
-        <img src="/img/md/md_6.png" alt="" class="img-responsive" data-title="Enero 2014" data-price="$35.00">
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_6.png" alt="" class="img-responsive" data-title="Enero 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_5.jpg" alt="" class="img-responsive" data-title="Febrero 2014" data-price="$28.00">
+        <img src="/img/md/md_5.jpg" alt="" class="img-responsive" data-title="Febrero 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_4.jpg" alt="" class="img-responsive" data-title="Marzo 2014" data-price="$42.30">
+        <img src="/img/md/md_4.jpg" alt="" class="img-responsive" data-title="Marzo 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_3.jpg" alt="" class="img-responsive" data-title="Abril 2014" data-price="$290.00">
+        <img src="/img/md/md_3.jpg" alt="" class="img-responsive" data-title="Abril 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    
-  </div>
-
-  
-  <div class="row  ebook-list">
-    <div class="cover-style"></div>
-    
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_9.jpg" alt="" class="img-responsive" data-title="Especial Pueblos Mágicos" data-price="$35.00">
+        <img src="/img/md/md_2.jpg" alt="" class="img-responsive" data-title="Mayo 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_10.jpg" alt="" class="img-responsive" data-title="Especial Vacaciones" data-price="$35.00">
-        <div class="cover-overlay">
-	<!-- <span><i class="fa fa-search"></i></span> -->
-	<p></p>
-	<button type="button" class="btn btn-secondary">COMPRAR</button>
-</div>      </a>
-    </div>
-    <div class="col-sm-3">
-      <a href="#" class="swipebox">
-        <img src="/img/md/md_11.jpg" alt="" class="img-responsive" data-title="Especial Vinos" data-price="$35.00">
-        <div class="cover-overlay">
-	<!-- <span><i class="fa fa-search"></i></span> -->
-	<p></p>
-	<button type="button" class="btn btn-secondary">COMPRAR</button>
-</div>      </a>
-    </div>
-    <div class="col-sm-3">
-      <a href="#" class="swipebox">
-        <img src="/img/md/md_12.jpg" alt="" class="img-responsive" data-title="Julio 2014" data-price="$35.00">
+        <img src="/img/md/md_1.jpg" alt="" class="img-responsive" data-title="Junio 2014">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
@@ -179,16 +142,140 @@
 
   <div class="row  ebook-list">
     <div class="cover-style"></div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <a href="#" class="swipebox">
-        <img src="/img/md/md_13.jpg" alt="" class="img-responsive" data-title="Agosto 2014" data-price="$35.00">
+        <img src="/img/md/md_7.jpg" alt="" class="img-responsive" data-title="Especial Mezcal">
         <div class="cover-overlay">
 	<!-- <span><i class="fa fa-search"></i></span> -->
 	<p></p>
 	<button type="button" class="btn btn-secondary">COMPRAR</button>
 </div>      </a>
     </div>
-    
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_8.jpg" alt="" class="img-responsive" data-title="Especial Pueblos Mágicos">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_9.jpg" alt="" class="img-responsive" data-title="Especial Pueblos Mágicos">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_10.jpg" alt="" class="img-responsive" data-title="Especial Vacaciones">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_11.jpg" alt="" class="img-responsive" data-title="Especial Vinos">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_12.jpg" alt="" class="img-responsive" data-title="Julio 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+  </div>
+
+  <div class="row  ebook-list">
+    <div class="cover-style"></div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_13.jpg" alt="" class="img-responsive" data-title="Agosto 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_14.jpg" alt="" class="img-responsive" data-title="Septiembre 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_15.jpg" alt="" class="img-responsive" data-title="Guía Chihuahua">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_16.jpg" alt="" class="img-responsive" data-title="Guía Ruta de los Dioses">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_17.jpg" alt="" class="img-responsive" data-title="Octubre 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_18.jpg" alt="" class="img-responsive" data-title="Noviembre 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+  </div>
+
+  <div class="row  ebook-list">
+    <div class="cover-style"></div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_19.jpg" alt="" class="img-responsive" data-title="Diciembre 2014">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#" class="swipebox">
+        <img src="/img/md/md_20.jpg" alt="" class="img-responsive" data-title="Especial Dinosaurios">
+        <div class="cover-overlay">
+	<!-- <span><i class="fa fa-search"></i></span> -->
+	<p></p>
+	<button type="button" class="btn btn-secondary">COMPRAR</button>
+</div>      </a>
+    </div>
   </div>
 
 </div>

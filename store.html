@@ -61,7 +61,7 @@
   </ul> -->
   <ul class="nav pull-right">
     <li>
-      <a href="#" class="btn btn-pink-outline" type="submit"><i class="fa fa-search"></i></a>
+      <a href="#" class="btn btn-pink-outline" type="submit" id="searchButton"><i class="fa fa-search"></i></a>
     </li>
   </ul>
 </nav><nav class="navbar navbar-fixed-bottom navbar-light bg-faded" id="btt-nav">
@@ -90,6 +90,16 @@
 	<div class="loader-center">
 		<span class="spin-load"><i class="fa fa-circle-o-notch fa-spin"></i></span>
 		<p>Cargando...</p>
+	</div>
+</div><div id="search-box">
+	<div class="search-field row">
+		<div class="col-md-12">
+			<form action="" class="col-md-12 search-form" id="searchBForm">
+				<fieldset class="form-group">
+			    <input type="text" class="form-control form-control-lg" id="searchbar" placeholder="Busqueda de Ediciones" onkeydown="pressed(event)">
+			  </fieldset>
+			</form>
+		</div>
 	</div>
 </div>
 <div class="container-fluid" id="ebooks-container">

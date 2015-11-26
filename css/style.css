@@ -2,7 +2,7 @@
 --------------------------------*/
 /* Mixins
 --------------------------------*/
-body, html { width: 100%; height: 100%; background-color: #2B2D2E; overflow-x: hidden; font-family: 'Raleway', sans-serif; }
+body, html { width: 100%; height: 100%; background-color: #2B2D2E; overflow-x: hidden; font-family: 'Raleway', sans-serif; position: relative; }
 
 /* Global Styles
 --------------------------------*/
@@ -47,6 +47,7 @@ body { padding-top: 54px; padding-bottom: 54px; }
 --------------------------------*/
 #ebooks-container { display: block; overflow-y: scroll; -webkit-overflow-scrolling: touch; overflow-x: hidden; height: 100%; }
 #ebooks-container .ebook-list { position: relative; padding: 15px 0 0 0; background: #2b2d2e; /* Old browsers */ background: -moz-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: -webkit-linear-gradient(top, #2b2d2e 0%, #111111 92%); background: linear-gradient(to bottom, #2b2d2e 0%, #111111 92%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2e', endColorstr='#111111',GradientType=0 ); }
+#ebooks-container .ebook-list .col-sm-3 { padding-left: 1.3rem; padding-right: 1.3rem; }
 #ebooks-container .ebook-list a { position: relative; display: block; margin: 0; padding: 0; -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); overflow: hidden; }
 #ebooks-container .ebook-list a .book-titlef { width: 100%; position: absolute; bottom: -18px; left: 0; background-color: rgba(43, 45, 46, 0.1); color: #fff; font-size: 10px; line-height: 18px; max-height: 18px; }
 #ebooks-container .ebook-list a .book-titlef p { margin: 0; text-align: center; }
@@ -63,5 +64,11 @@ body { padding-top: 54px; padding-bottom: 54px; }
 .triangle-topright { display: block; position: relative; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; z-index: 1001; }
 .triangle-topright a { color: #fff; }
 .triangle-topright::before { content: ''; border-top: 55px solid #EA3390; border-left: 55px solid transparent; position: absolute; top: 0; right: 0; }
-.triangle-topright.bought-m::before { border-top: 55px solid #4F5254; }
+.triangle-topright.bought-m::before { border-top: 55px solid #5cb85c; }
 .triangle-topright .triangle-text { transform: rotate(45deg); position: absolute; top: 8px; right: 1px; width: 40px; color: #fff; font-size: 12px; font-weight: bold; }
+
+/* Search Box
+--------------------------------*/
+#search-box { display: none; position: absolute; width: 100%; top: 0; left: 0; z-index: 1031; background: rgba(51, 51, 51, 0.8); }
+#search-box .search-field { display: block; margin-top: 60%; }
+#search-box .col-md-12.search-form { padding-left: 1.3rem; padding-right: 1.3rem; }

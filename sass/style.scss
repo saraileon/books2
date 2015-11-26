@@ -74,8 +74,8 @@ body{
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2e', endColorstr='#111111',GradientType=0 );
 
 		.col-sm-3{
-			// padding-left: 1rem;
-    	// padding-right: 1rem;
+			padding-left: 1.3rem;
+    	padding-right: 1.3rem;
 		}
 
 		a{
@@ -232,7 +232,8 @@ body{
 	&.bought-m{
 
 		&::before {
-    	border-top: 55px solid $medium-grey;
+    	// border-top: 55px solid $medium-grey;
+    	border-top: 55px solid #5cb85c;
 		}
 
 	}
@@ -252,6 +253,29 @@ body{
 
 
 
+/* Search Box
+--------------------------------*/
+
+#search-box{
+	display: none;
+	position: absolute;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 1031;
+	background: rgba(51,51,51,0.8);
+
+	.search-field{
+		display: block;
+		margin-top: 60%;
+	}
+
+	.col-md-12.search-form{
+		padding-left: 1.3rem;
+    padding-right: 1.3rem;
+	}
+
+}
 
 
 
