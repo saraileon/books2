@@ -1,0 +1,18 @@
+@import "bourbon";
+@charset "utf-8";
+@import "global";
+
+body,html{
+	background-color: #f1f1f1;
+}
+
+#sidebar{
+	width: 280px;
+	padding-left: -0.9375rem;
+	background-color: red;
+}
+
+#content{
+	padding-right: -0.9375rem;
+	background-color: purple;
+}

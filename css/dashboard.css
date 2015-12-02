@@ -1,0 +1,42 @@
+/* Colors
+--------------------------------*/
+/* Mixins
+--------------------------------*/
+body, html { width: 100%; height: 100%; background-color: #2B2D2E; overflow-x: hidden; font-family: 'Raleway', sans-serif; position: relative; }
+
+/* Global Styles
+--------------------------------*/
+a { color: #EA3390; }
+
+.pull-bottom { display: inline-block; vertical-align: bottom; }
+
+.fix { clear: both; float: none; }
+
+.btn-pink { background-color: #EA3390; border-color: #EA3390; color: #fff; transition: all 0.4s ease-in-out; }
+.btn-pink:hover { background-color: #333; border-color: #333; color: #fff; }
+
+.btn-pink-outline { border-color: #EA3390; background-color: transparent; color: #EA3390; transition: color 0.4s ease-in-out; }
+.btn-pink-outline:hover { background-color: #EA3390; color: #fff; }
+
+/* Bottom Nav
+--------------------------------*/
+.navbar#btt-nav { padding: 0rem 1rem; }
+.navbar#btt-nav .nav { margin: 0 auto; display: inline-block; width: auto; }
+.navbar#btt-nav .nav li { padding: 0 5px; }
+.navbar#btt-nav .nav li a.nav-link { padding-bottom: 0; padding-top: 0.22rem; }
+.navbar#btt-nav .nav li p { margin: 0; font-size: 11px; }
+.navbar#btt-nav .nav li i { font-size: 30px; padding: 0; margin: 0; }
+.navbar#btt-nav .nav .nav-item + .nav-item { margin-left: 1.5em; }
+
+/* Loader Styles
+--------------------------------*/
+#loader { position: fixed; top: 0; height: 0; z-index: 2000; background: #333 url("../img/footer_lodyas.png") repeat top left; width: 100%; min-height: 200px; color: #fff; text-align: center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; }
+#loader p { font-size: 42px; }
+#loader .loader-center { margin: 48% auto 0; display: block; width: 300px; }
+#loader .spin-load { font-size: 74px; margin: 0; padding: 0; }
+
+body, html { background-color: #f1f1f1; }
+
+#sidebar { width: 280px; padding-left: -0.9375rem; background-color: red; }
+
+#content { padding-right: -0.9375rem; background-color: purple; }

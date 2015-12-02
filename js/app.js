@@ -3,7 +3,7 @@
 
 var pressed = function (e) {
   // Has the enter key been pressed?
-  if ( (window.event ? event.keyCode : e.which) == 13) { 
+  if ( (window.event ? event.keyCode : e.which) === 13) { 
     // If it has been so, manually submit the <form>
     // document.forms[0].submit();
     $('#search-box').fadeOut(1000);
@@ -116,6 +116,7 @@ $(window).load(function() {
 	$(window).resize(alignBooks, alignNav, searchBar);
 
 	imgLoad.on( 'always', function( instance ) {
+		console.log(instance);
 		$('#loader').fadeOut(1900);
 	});
 });

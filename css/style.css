@@ -28,14 +28,14 @@ a { color: #EA3390; }
 .navbar#btt-nav .nav li i { font-size: 30px; padding: 0; margin: 0; }
 .navbar#btt-nav .nav .nav-item + .nav-item { margin-left: 1.5em; }
 
-body { padding-top: 54px; padding-bottom: 54px; }
-
 /* Loader Styles
 --------------------------------*/
 #loader { position: fixed; top: 0; height: 0; z-index: 2000; background: #333 url("../img/footer_lodyas.png") repeat top left; width: 100%; min-height: 200px; color: #fff; text-align: center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale'); pointer-events: none; }
 #loader p { font-size: 42px; }
 #loader .loader-center { margin: 48% auto 0; display: block; width: 300px; }
 #loader .spin-load { font-size: 74px; margin: 0; padding: 0; }
+
+body { padding-top: 54px; padding-bottom: 54px; }
 
 /* Navbar Styles
 --------------------------------*/
